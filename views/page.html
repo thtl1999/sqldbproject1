@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div>
+            <h2>유저 등록</h2>
+            <form action="/userlist" method="post"></form>
+                <a>닉네임</a>
+                <input type="text" name="uname">
+                <input type="submit" value="등록">
+            </form>
+        </div>
+        <div>
+            <h2>유저 리스트</h2>
+            <form action="/userlist" method="get">
+                <input type="submit" value="보기">
+            </form>
+        </div>
+        <div>
+            <h2>캐시 충전하기</h2>
+            <form action="/purchase" method="get">
+                <a>유저 아이디</a>
+                <input type="text" name="id">
+                <input type="submit" value="10만원 충전">
+            </form>
+        </div>
+        <div>
+            <h2>뽑기 리스트</h2>
+            <form action="/LBlist" method="get">
+                <input type="submit" value="보기">
+            </form>
+        </div>
+        <div>
+            <h2>뽑기 만들기</h2>
+            <form action="/LBmake" method="get">
+                <a>★★★★ 확률</a>
+                <input type="text" name="r4">
+                <a>★★★ 확률</a>
+                <input type="text" name="r3">
+                <a>★★ 확률</a>
+                <input type="text" name="r2">
+                <a>스타 가격</a>
+                <input type="text" name="cost">
+                <input type="submit" value="만들기">
+            </form>
+        </div>
+        <div>
+            <h2>뽑기</h2>
+            <form action="/LBpurchase" method="get">
+                <a>뽑기 리스트</a>
+                <input type="text" name="lootid">
+                <a>유저 ID</a>
+                <input type="text" name="uid">
+                <input type="submit" value="뽑기">
+            </form>
+        </div>
+        <div>
+            <h2>카드 리스트</h2>
+            <form action="/cardlist" method="get">
+                <input type="submit" value="보기">
+            </form>
+        </div>
+        <div>
+            <h2>유저 카드</h2>
+            <form action="/usercard" method="get">
+                <a>유저 아이디</a>
+                <input type="text" name="id">
+                <input type="submit" value="보기">
+            </form>
+        </div>
+        <div>
+            <h2>모험 시작</h2>
+            <form action="/adventure" method="get">
+                <a>유저 아이디</a>
+                <input type="text" name="id">
+                <input type="submit" value="보기">
+            </form>
+        </div>
+    </body>
+</html>
